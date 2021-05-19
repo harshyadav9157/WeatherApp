@@ -14,6 +14,8 @@
 		B01C120A264E788A00B4B5FC /* WeatherApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B01C1208264E788A00B4B5FC /* WeatherApp.xcdatamodeld */; };
 		B01C120C264E788C00B4B5FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B01C120B264E788C00B4B5FC /* Assets.xcassets */; };
 		B01C120F264E788C00B4B5FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01C120D264E788C00B4B5FC /* LaunchScreen.storyboard */; };
+		B03B9B3C2655A53600AA9098 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03B9B3B2655A53600AA9098 /* WeatherData.swift */; };
+		B03B9B3F2655A53D00AA9098 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03B9B3E2655A53D00AA9098 /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		B01C120B264E788C00B4B5FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B01C120E264E788C00B4B5FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B01C1210264E788C00B4B5FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B03B9B3B2655A53600AA9098 /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		B03B9B3E2655A53D00AA9098 /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +64,40 @@
 			children = (
 				B01C11FF264E788A00B4B5FC /* AppDelegate.swift */,
 				B01C1201264E788A00B4B5FC /* SceneDelegate.swift */,
-				B01C1203264E788A00B4B5FC /* ViewController.swift */,
-				B01C1205264E788A00B4B5FC /* Main.storyboard */,
+				B01C1217264E7FAC00B4B5FC /* Model */,
+				B01C1218264E7FBA00B4B5FC /* View */,
+				B01C1219264E7FC500B4B5FC /* controller */,
 				B01C120B264E788C00B4B5FC /* Assets.xcassets */,
 				B01C120D264E788C00B4B5FC /* LaunchScreen.storyboard */,
 				B01C1210264E788C00B4B5FC /* Info.plist */,
 				B01C1208264E788A00B4B5FC /* WeatherApp.xcdatamodeld */,
 			);
 			path = WeatherApp;
+			sourceTree = "<group>";
+		};
+		B01C1217264E7FAC00B4B5FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B03B9B3E2655A53D00AA9098 /* WeatherModel.swift */,
+				B03B9B3B2655A53600AA9098 /* WeatherData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B01C1218264E7FBA00B4B5FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B01C1205264E788A00B4B5FC /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B01C1219264E7FC500B4B5FC /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				B01C1203264E788A00B4B5FC /* ViewController.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +116,8 @@
 			dependencies = (
 			);
 			name = WeatherApp;
+			packageProductDependencies = (
+			);
 			productName = WeatherApp;
 			productReference = B01C11FC264E788A00B4B5FC /* WeatherApp.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +145,8 @@
 				Base,
 			);
 			mainGroup = B01C11F3264E788A00B4B5FC;
+			packageReferences = (
+			);
 			productRefGroup = B01C11FD264E788A00B4B5FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,8 +175,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B01C120A264E788A00B4B5FC /* WeatherApp.xcdatamodeld in Sources */,
+				B03B9B3C2655A53600AA9098 /* WeatherData.swift in Sources */,
 				B01C1204264E788A00B4B5FC /* ViewController.swift in Sources */,
 				B01C1200264E788A00B4B5FC /* AppDelegate.swift in Sources */,
+				B03B9B3F2655A53D00AA9098 /* WeatherModel.swift in Sources */,
 				B01C1202264E788A00B4B5FC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
